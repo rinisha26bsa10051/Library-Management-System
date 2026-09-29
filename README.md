@@ -1,25 +1,18 @@
 # Library Management System
 
-A simple **Library Management System** developed using Python as an academic project. The program provides a menu-driven interface for performing basic library operations such as adding, issuing, returning, and viewing books.
+## Project Overview
 
-##  Project Overview
+The Library Management System is a simple console-based application developed using Python. It is designed to perform basic library operations through a menu-driven interface.
 
-The Library Management System is a console-based Python application designed to demonstrate fundamental programming concepts through a practical use case.
+The system allows users to add books, issue books, return books, and view the books currently available in the library.
 
-The system maintains a collection of books and allows the user to perform four primary operations:
+## Features
 
-1. **Add Books**
-2. **Issue Books**
-3. **Return Books**
-4. **View Books**
-
-The program continues running until the user selects the **Exit** option.
-
-##  Features
+The application provides the following functionalities:
 
 ### 1. Add Books
 
-Allows the user to add a new book to the library.
+Allows the user to add a book to the library collection.
 
 ### 2. Issue Books
 
@@ -31,21 +24,21 @@ Allows the user to return a book to the library. The returned book is added back
 
 ### 4. View Books
 
-Displays all currently available books along with their serial numbers.
+Displays the list of books currently available in the library along with their serial numbers.
 
 ### 5. Exit
 
 Terminates the program when the user selects the exit option.
 
-##  Technologies Used
+## Technologies Used
 
-* **Programming Language:** Python
-* **Platform:** Google Colab / Python
-* **Interface:** Command-Line Interface (CLI)
+* Python
+* Google Colab / Python
+* Command-Line Interface (CLI)
 
-##  Python Concepts Demonstrated
+## Python Concepts Demonstrated
 
-This project demonstrates several fundamental Python programming concepts:
+This project demonstrates the following fundamental Python concepts:
 
 * Variables
 * Lists
@@ -57,33 +50,38 @@ This project demonstrates several fundamental Python programming concepts:
 * List methods such as `append()` and `remove()`
 * Membership operators (`in`)
 * Formatted strings (f-strings)
-* Basic program control using `break`
+* `break` statement
 * Menu-driven programming
 
-## ⚙️ How the Program Works
+## Program Structure
 
-The program uses a Python list named `library` to store the names of currently available books.
+The program uses a Python list named `library` to store the books currently available.
 
 ```python
 library = []
 ```
 
-The system then uses separate functions for each major operation:
+The application is divided into four main functions:
 
-```text
-                 
-##  How to Run
+* `add_books()` — Adds a new book to the library.
+* `issue_books()` — Issues an available book.
+* `return_books()` — Adds a returned book to the library.
+* `view_books()` — Displays the available books.
 
-### Option 1: Google Colab
+A continuous `while` loop provides the main menu and allows the user to perform multiple operations until the Exit option is selected.
 
-1. Open the Python notebook in Google Colab.
+## How to Run
+
+### Using Google Colab
+
+1. Open the project notebook in Google Colab.
 2. Run the code cell.
-3. Select an option from the displayed menu.
-4. Follow the instructions provided by the program.
+3. Select an option from the menu.
+4. Follow the instructions displayed by the program.
 
-### Option 2: Run Locally
+### Running Locally
 
-Make sure Python is installed on your computer.
+Ensure that Python is installed on your system.
 
 Save the program as:
 
@@ -91,7 +89,7 @@ Save the program as:
 library_management.py
 ```
 
-Then run:
+Run the program using:
 
 ```bash
 python library_management.py
@@ -112,23 +110,49 @@ Enter your choice:
 
 ## Data Storage
 
-The current version stores book information using a Python **list**.
+The current version uses a Python list to store the available books.
 
 ```python
 library = []
 ```
 
-This means that the data exists only while the program is running. Once the program is terminated, the stored book information is lost.
+The data is stored only in the program's memory during execution. Therefore, the book information is not permanently saved and will be lost when the program is terminated.
 
-No external database or file storage is used in this version.
+The current implementation does not use file storage or a database.
 
-##  Learning Objective
+## Limitations
 
-The primary objective of this project is to apply fundamental Python programming concepts to develop a simple real-world application.
+The current version is intended as a basic implementation for demonstrating fundamental Python concepts. Some limitations include:
 
-Through this project, concepts such as **functions, lists, loops, conditional statements, user input, and menu-driven programming** are combined to create a functional Library Management System.
+* Book information is not stored permanently.
+* There are no unique IDs for books.
+* The system does not maintain information about library members.
+* There is no due-date or fine management.
+* Input validation is limited.
+* The system does not distinguish between multiple copies of the same book.
 
-#  Author
+## Future Improvements
+
+The project can be further enhanced by implementing:
+
+* File-based or database storage
+* Unique identification numbers for books
+* Library member management
+* Book search functionality
+* Book availability tracking
+* Due dates and fine calculation
+* Improved input validation
+* Object-oriented programming using classes
+* Graphical User Interface (GUI)
+* Database integration using SQLite or another database system
+
+## Learning Objective
+
+The objective of this project is to apply fundamental Python programming concepts to a simple real-world application.
+
+The project demonstrates how functions, lists, loops, conditional statements, user input, and menu-driven programming can be combined to create a functional Library Management System.
+
+## Author
 
 Rinisha Bhowmik
 
